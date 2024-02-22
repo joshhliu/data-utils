@@ -1,3 +1,4 @@
+```
 from data_common_utils.glue_utils.source_stage import SyncConnections, SyncTables, GlueLoad, InitializeVariables
 
 ###### Glue Variables ######
@@ -55,3 +56,4 @@ for table in table_list:
                             )
         sync = GlueLoad()
         sync.IncrementalLoad(connections,tables,glueContext,spark)
+```
